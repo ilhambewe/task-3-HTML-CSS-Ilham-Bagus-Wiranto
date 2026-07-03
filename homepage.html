@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rute Ganteng</title>
+    <style>
+        /* Mengatur margin dasar dan jenis huruf */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* --- HEADER & NAVIGASI --- */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-bottom: 1px solid #999;
+            background-color: #54f77a;
+        }
+
+        header h1 {
+            font-size: 28px;
+            font-weight: normal;
+            font-family: bahnschrift; 
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li {
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* --- BAGIAN HERO (Kiri Teks, Kanan Gambar) --- */
+        .hero-section {
+            display: flex;
+            border-bottom: 1px solid #999;
+            min-height: 400px;
+        }
+
+        .hero-text {
+            flex: 1;
+            padding: 30px;
+            border-right: 1px solid #999;
+        }
+
+        .hero-text h2 {
+            font-size: 27px;
+            font-weight: normal;
+            margin-bottom: 30px;
+            font-family: "lucida sans", sans-serif;
+            font-weight: bold;
+        }
+
+        .hero-text p {
+            margin-bottom: 18px;
+            text-align: justify;
+            font-family: "lucida sans", sans-serif;
+        }
+
+        .hero-image {
+            flex: 1.5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: #666;
+            background-color: #fafafa;
+        }
+
+        /* --- BAGIAN FITUR --- */
+        .features-section {
+            padding: 40px;
+            text-align: center;
+            border-bottom: 1px solid #999;
+        }
+
+        .features-section h2 {
+            font-size: 20px;
+            font-weight: normal;
+            margin-bottom: 30px;
+        }
+
+        .feature-cards {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        /* Styling untuk 4 kotak fitur */
+        .card {
+            width: 130px;
+            height: 70px;
+            border: 1px solid #999;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            padding: 10px;
+            background-color: #fff;
+        }
+
+        .card p {
+            font-size: 10px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        /* Tombol Buka Peta */
+        .btn-peta {
+            padding: 12px 30px;
+            font-size: 18px;
+            background-color: #fff;
+            border: 1px solid #999;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-peta:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* --- BAGIAN FOOTER (Tentang) --- */
+        footer {
+            padding: 40px;
+            background-color: #54f77a;
+        }
+
+        footer h3 {
+            font-size: 20px;
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            font-size: 16px;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rute Ganteng</h1>
+        <nav>
+            <ul>
+                <li><a href="Tentang.html">Tentang</a></li>
+                <li><a href="Peta.html">Peta</a></li>
+                <li><a href="Kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-text">
+            <h2>Selamat Datang!</h2>
+            <p>Rute Ganteng adalah sebuah website berbasis GIS yang menyediakan informasi mengenai rute perjalanan Bus Si Mas Ganteng di Kabupaten Tuban.</p>
+            <p>Berangkat dari keresahaan masyarakat yang ingin mengetahui rute perjalanan Bus Si Mas Ganteng, maka dibuatlah website ini agar masyarakat dapat mengetahui rute perjalanannya dengan mudah.</p>
+            <p>Bus ini menyasar pelajar dan masyarakat umum. Selain di wilayah Tuban, Bus Si Mas Ganteng juga melayani rute perjalanan ke stasiun terdekat, seperti Stasiun Bojonegoro yang ada di Kabupaten Bojonegoro.</p>
+        </div>
+        <div class="hero-image">
+            <img src ="Gambar bus.jpg"
+            width="900"
+        </div>
+    </section>
+
+    <section class="features-section">
+        <h2>Fitur</h2>
+        
+        <div class="feature-cards">
+            <div class="card">Rute</div>
+            <div class="card">Halte </div>
+            <div class="card">Jangkauan</div>
+            <div class="card">Fasilitas Sekitar</div>
+        </div>
+
+        <p><a class="btn-peta" href="Peta.html">Buka Peta!</a></p>
+    </section>
+
+    <footer>
+        <h3>Tentang</h3>
+        <p>Rute Ganteng adalah website berbasis GIS yang dikembangkan oleh Ilham Bagus Wiranto dengan tujuan mempermudah masyarakat dalam mengetahui rute perjalanan Bus Si Mas Ganteng.</p>
+    </footer>
+ 
+      
+      
+</body>
+</html>
